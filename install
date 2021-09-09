@@ -1,0 +1,35 @@
+curl -sL https://deb.nodesource.com/setup_14.x | sudo bash -
+
+install Node.js
+
+sudo apt-get install -y nodejs gcc g++ make python net-tools
+
+node -v
+
+sudo npm install -g --unsafe-perm homebridge homebridge-config-ui-x
+
+sudo hb-service install --user homebridge
+
+hostname -I
+
+sudo hb-service uninstall
+
+sudo npm uninstall -g homebridge homebridge-config-ui-x
+
+node -v
+
+npm install -g --unsafe-perm homebridge
+
+sudo npm install -g --unsafe-perm homebridge
+
+homebridge
+
+homebridge-plugin
+
+sudo npm install -g homebridge-lockitron
+
+npm link
+
+homebridge -D
+
+homebridge -D -U ~/.homebridge-dev

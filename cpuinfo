@@ -1,0 +1,23 @@
+processor       : 0
+model name      : ARMv6-compatible processor rev 7 (v6l)
+BogoMIPS        : 697.95
+Features        : half thumb fastmult vfp edsp java tls 
+CPU implementer : 0x41
+CPU architecture: 7
+CPU variant     : 0x0
+CPU part        : 0xb76
+CPU revision    : 7
+
+Hardware        : BCM2835
+Revision        : 000e
+Serial          : 000000002fee49cb
+Model           : Raspberry Pi Model B Rev 2
+
+
+   Static hostname: raspberrypi
+         Icon name: computer
+        Machine ID: 6418b3cee19843ac9a319b36184794c0
+           Boot ID: f930aff95f64499eb0444e6e4d0a8cb2
+  Operating System: Raspbian GNU/Linux 10 (buster)
+            Kernel: Linux 5.4.79+
+      Architecture: arm

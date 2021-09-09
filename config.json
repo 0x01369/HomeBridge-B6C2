@@ -1,0 +1,108 @@
+{
+    "bridge": {
+        "name": "Homebridge B6C2",
+        "username": "0E:2B:7C:A5:B6:C2",
+        "port": 51759,
+        "pin": "581-28-264"
+    },
+    "accessories": [
+        {
+            "accessory": "NetworkDevice",
+            "name": "Laptop",
+            "mac": "18:DB:F2:58:01:1F",
+            "ip": "192.168.1.182",
+            "pingInterval": 45,
+            "wakeGraceTime": 90,
+            "shutdownGraceTime": 60,
+            "shutdownCommand": "sudo shutdown -h now"
+        },
+        {
+            "accessory": "NetworkDevice",
+            "name": "Giakoumezos PC",
+            "mac": "1C:6F:65:4C:75:29",
+            "ip": "192.168.1.193",
+            "pingInterval": 45,
+            "wakeGraceTime": 90,
+            "shutdownGraceTime": 60,
+            "shutdownCommand": "net rpc shutdown -f -t 0 -C 'message' -U Giakoumezos%ote1054633 -I 192.168.1.193"
+        }
+    ],
+    "platforms": [
+        {
+            "name": "Config",
+            "port": 8080,
+            "auth": "form",
+            "theme": "auto",
+            "tempUnits": "c",
+            "lang": "auto",
+            "platform": "config"
+        },
+        {
+            "devices": [
+                {
+                    "name": "Living Room Tv",
+                    "ip": "192.168.1.151",
+                    "mac": "14:C9:13:EC:9C:B8",
+                    "pollingInterval": 1,
+                    "deepDebugLog": true,
+                    "volumeLimit": 100,
+                    "volumeControl": "slider",
+                    "channelControl": false,
+                    "mediaControl": false,
+                    "appButtons": [
+                        {
+                            "appId": "netflix",
+                            "name": "Netflix"
+                        },
+                        {
+                            "appId": "com.webos.app.hdmi1",
+                            "name": "Nova"
+                        },
+                        {
+                            "appId": "com.webos.app.hdmi2",
+                            "name": "PS4"
+                        },
+                        {
+                            "appId": "com.webos.app.livetv",
+                            "name": "Live Tv"
+                        }
+                    ],
+                    "remoteSequenceButtons": [
+                        {
+                            "interval": [
+                                0
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "platform": "webostv"
+        },
+        {
+            "name": "eWeLink",
+            "countryCode": "30",
+            "username": "giakoumezos@gmail.com",
+            "password": "ote1054633",
+            "debug": true,
+            "debugReqRes": true,
+            "disableHTTPRefresh": false,
+            "disableEveLogging": false,
+            "inUsePowerThreshold": 0,
+            "hideTHSwitch": false,
+            "lowBattThreshold": 25,
+            "sensorTimeDifference": 120,
+            "hideZBLDPress": false,
+            "groups": [
+                {
+                    "operationTime": 100
+                }
+            ],
+            "bridgeSensors": [
+                {
+                    "sensorTimeLength": 60
+                }
+            ],
+            "platform": "eWeLink"
+        }
+    ]
+}
